@@ -14,19 +14,43 @@
     </div>
 
     <form action="#" id="survey-form">
-        <label for="" id="name-label">Name: 
-            <input type="text" name="" id="name" placeholder="Name here" required>
+        <label for="name" id="name-label">Name: 
+            <input type="text" name="" id="name" placeholder="Name here" title="Name here, don't clear" required>
         </label>
-        <label for="" id="email-label">E-mail: 
-            <input type="email" name="" id="email" placeholder="E-mail here" required>
+        <label for="email" id="email-label">E-mail: 
+            <input type="email" name="" id="email" placeholder="E-mail here" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Your e-mail here, with the example yourname@abc.com" required>
         </label>
-        <label for="" id="number-label"> Number:
-            <input type="number" id="number" min="10" max="50" placeholder="Entre com um número">
+        <label for="number" id="number-label"> Age:
+            <input type="number" id="number" min="18" max="70" placeholder="Your age here" pattern="[0-9]{2,}" title="Your age here, age between 18 and 70 years" required>
         </label>
-        <select name="" id="dropdown">
-            <option value="A" name="choose">A</option>
-            <option value="B" name="choose">B</option>
-        </select>
+        <label for=""> Gender:
+            <select name="gender" id="dropdown">
+                <option value="M" name="choose">Male</option>
+                <option value="F" name="choose">Female</option>
+            </select>
+        </label>
+        <label for=""> Married 
+            <input type="radio" name="conjugate" id="">
+        </label>
+        <label> Single 
+            <input type="radio" name="conjugate" id="">
+        </label>
+        <label for=""> Ocupation: 
+            <input type="checkbox" name="" id="" value="student"> Student
+            <input type="checkbox" name="" id="" value="freelancer"> Freelancer
+            <input type="checkbox" name="" id="" value="public-server"> Public Server
+            <input type="checkbox" name="" id="" value="private-sector"> Private Sector
+            <input type="checkbox" name="" id="" value="others"> Others
+        </label>
+        <label for=""> Additional Information: 
+            <textarea name="" id="" cols="30" rows="5"></textarea>
+        </label>
+        <input type="submit" id="submit" value="Submit">
+
+
+
+        
+
 
 
 
